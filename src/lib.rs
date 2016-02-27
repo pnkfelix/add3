@@ -1,6 +1,7 @@
 pub struct Adder;
 
 impl Adder {
+    pub fn new() -> Adder { Adder }
     pub fn add(&self, x: i64) -> i64 { x + 3 }
 }
 
@@ -21,8 +22,8 @@ fn it_works_64bit() {
 }
 
 #[test]
-fn meth_works_0() {  assert_eq!(Adder.add( 0),  3); }
+fn meth_works_0() {  assert_eq!(Adder::new().add( 0),  3); }
 #[test]
-fn meth_works_13() { assert_eq!(Adder.add(14), 17); }
+fn meth_works_13() { assert_eq!(Adder::new().add(14), 17); }
 #[test]
-fn meth_works_n1() { assert_eq!(Adder.add(-1),  2); }
+fn meth_works_n1() { assert_eq!(Adder::new().add(-1),  2); }
