@@ -19,3 +19,10 @@ fn it_works_n1() { assert_eq!(add3(-1),  2); }
 fn it_works_64bit() {
     assert_eq!(add3(::std::u32::MAX as i64), ::std::u32::MAX as i64 + 3);
 }
+
+#[test]
+fn meth_works_0() {  assert_eq!(Adder.add( 0),  3); }
+#[test]
+fn meth_works_13() { assert_eq!(Adder.add(14), 17); }
+#[test]
+fn meth_works_n1() { assert_eq!(Adder.add(-1),  2); }
