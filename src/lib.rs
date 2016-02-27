@@ -9,7 +9,7 @@ pub fn twice(a: add3::Adder, x: i64) -> i64 {
 }
 
 pub fn make_adder() -> add3::Adder {
-    add3::Adder
+    add3::Adder::new()
 }
 
 #[test]
