@@ -1,8 +1,8 @@
-pub struct Adder;
+pub struct Adder { amount: i64 }
 
 impl Adder {
-    pub fn new() -> Adder { Adder }
-    pub fn add(&self, x: i64) -> i64 { x + 3 }
+    pub fn new() -> Adder { Adder { amount: 3 } }
+    pub fn add(&self, x: i64) -> i64 { x + self.amount }
 }
 
 pub fn add3(x: i64) -> i64 {
