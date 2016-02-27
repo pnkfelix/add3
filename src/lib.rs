@@ -1,3 +1,9 @@
+pub struct Adder;
+
+impl Adder {
+    pub fn add(x: i64) -> i64 { x + 3 }
+}
+
 pub fn add3(x: i64) -> i64 {
     x + 3
 }
