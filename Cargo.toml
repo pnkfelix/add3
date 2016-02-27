@@ -4,3 +4,5 @@ version = "0.1.0"
 authors = ["Felix S. Klock II <pnkfelix@pnkfx.org>"]
 
 [dependencies]
+add6 = "0.1.0"
+add6_64 = "0.1.0"
