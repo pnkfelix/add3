@@ -1,0 +1,9 @@
+[package]
+name = "add6_64"
+version = "0.1.0"
+authors = ["Felix S. Klock II <pnkfelix@pnkfx.org>"]
+description = "Toy crate that depends on recent version of add3 crate."
+license = "Unlicense"
+
+[dependencies]
+add3 = "2.0.0"
